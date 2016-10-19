@@ -1,0 +1,12 @@
+<%= form_for(@user, action: new_user_path) do |f| %>
+	<%= f.label (:name) %>
+	<%= f.text_field :name %>
+	<%= f.label (:email) %>
+	<%= f.text_field :email %>
+	<%= f.label (:image_url) %>
+	<%= f.text_field :image_url %>
+	<%= f.label (:password) %>
+	<%= f.password_field :password %>
+	<%= f.submit 'Create' %>
+<% end %>
+  
